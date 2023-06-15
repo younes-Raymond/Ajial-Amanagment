@@ -44,7 +44,7 @@ body{
 
 .full-container
 {
-  background-image: url(/images/image1.jpg);
+  background-image: url(images/image1.jpg);
   background-repeat: unset;
   background-size: cover;
   background-position: center;
