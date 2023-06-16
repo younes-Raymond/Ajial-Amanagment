@@ -398,3 +398,16 @@ getStafCountBtn.addEventListener('click', () => {
   stafContainer.appendChild(strong3)
 });
 
+function changeGradient() {
+  const coulwareElement = document.querySelector(".coulware");
+
+  function updateGradient() {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      const deg = scrollTop / 10;
+      coulwareElement.style.background = `repeating-linear-gradient(${deg}deg, black, transparent 100px)`;
+  }
+
+  window.addEventListener("scroll", updateGradient);
+}
+
+changeGradient();
