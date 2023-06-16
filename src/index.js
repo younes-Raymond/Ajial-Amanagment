@@ -273,13 +273,13 @@ showMoneyCount.addEventListener('click', () => {
 const week_1 = {
   props: {
     name: 'unknown',
-    startAt: new Date('june 1, 2023')
+    startAt: new Date('june 6, 2023')
   },
   Monday: { blacka: 40 },
   Tuesday: { blacka: 42 },
   Wednesday: { blacka: 40 },
-  Thursday: { blacka: 40 },
-  Friday: { blacka: 0 },
+  Thursday: { blacka: 60 },
+  Friday: { blacka: 28 },
   Saturday: { blacka: 0 },
   Sunday: null
 };
@@ -294,7 +294,7 @@ const week1 = {
   Wednesday: { jwan: 46, blacka: 48 },
   Thursday: { jwan: 46, blacka: 46 },
   Friday: { jwan: 46, blacka: 32 },
-  Saturday: { jwan: 0, blacka: 0 },
+  Saturday: { jwan: 34, blacka: 34 },
   Sunday: null
 };
 
@@ -307,7 +307,7 @@ const week2 = {
   Tuesday: { jwan: 40, blacka: 40 },
   Wednesday: { jwan: 40, blacka: 40 },
   Thursday: { jwan: 40, blacka: 40 },
-  Friday: { jwan: 0, blacka: 0 },
+  Friday: { jwan: 44, blacka: 40 },
   Saturday: { jwan: 0, blacka: 0 },
   Sunday: null
 };
@@ -316,7 +316,6 @@ const getStafCountBtn = document.getElementById('get staf_Count');
 const stafContainer = document.querySelector('.staf-container');
 
 getStafCountBtn.addEventListener('click', () => {
-
   if (stafContainer.classList.contains('hide')) {
     stafContainer.classList.remove('hide');
     stafContainer.classList.add('show');
