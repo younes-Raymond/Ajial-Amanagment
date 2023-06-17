@@ -353,6 +353,7 @@ getStafCountBtn.addEventListener('click', () => {
   }, 0);
   
 
+  
 
   const totalJwanValue = totalJwan * 4.5;
   const totalBlackaValue = totalBlacka * 2.5;

@@ -8,6 +8,15 @@
   --color-orange: orange;
   --color-black: rgb(29, 24, 24);
 }
+h1
+{
+  text-align: center;
+    border: 1px solid black;
+    width: 50%;
+    margin: 18px 25%;
+    border-radius: 5px;
+    padding: 10px;
+}
 
 .container-calculation {
   display: flex;
