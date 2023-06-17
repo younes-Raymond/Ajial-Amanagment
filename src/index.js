@@ -74,6 +74,7 @@ const columnD = document.getElementById('columnD');
 let selectedApartments = [];
 
 function createApartmentElement(apartmentCode) {
+  const Qaws = 'Qaws';
   const category = apartmentCode.split('-')[1];
   const dimensions = apartmentCode.split('-')[0];
   const apartmentElement = document.createElement('div');
@@ -90,6 +91,12 @@ function createApartmentElement(apartmentCode) {
       boxElement.appendChild(spanElement);
       boxElement.appendChild(document.createElement('br'));
     });
+
+    if (!apartmentElement.classList.contains('color-blue') && !apartmentElement.classList.contains('color-purple') && !apartmentElement.classList.contains('color-black')) {
+      const Qawss = document.createElement('span');
+      Qawss.innerText = Qaws;
+      boxElement.appendChild(Qawss);
+    }
   } else {
     boxElement.innerText = dimensions;
   }
@@ -110,6 +117,8 @@ function createApartmentElement(apartmentCode) {
 
   return apartmentElement;
 }
+
+
 
 
 
@@ -353,7 +362,7 @@ getStafCountBtn.addEventListener('click', () => {
   }, 0);
   
 
-  
+
 
   const totalJwanValue = totalJwan * 4.5;
   const totalBlackaValue = totalBlacka * 2.5;
